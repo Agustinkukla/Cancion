@@ -26,8 +26,8 @@ body {
   text-align: center;
   margin-bottom: 100px;
   background-color: #212020;
-  width: 450px;
-  height: 420px;
+  width: 200px;
+  height: 200px;
   border-radius: 40px;
 
 }
@@ -126,59 +126,7 @@ h1 {
   text-align: center;
 }
 
-/* flecha2 */
-.flecha-container {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-}
 
-.arrow3 {
-  width: 6vmin;
-  height: 6vmin;
-  position: relative;
-  transform: rotate(135deg);
-  bottom: 0;
-
-  &::before,
-  &::after {
-    content: "";
-    width: 100%;
-    height: 100%;
-    border-width: 0.8vmin 0.8vmin 0 0;
-    border-style: solid;
-    border-color: #bccf4d;
-    transition: 0.2s ease;
-    display: block;
-    transform-origin: 100% 0;
-  }
-
-  &::after {
-    content: "";
-    float: left;
-    position: relative;
-    top: -100%;
-    width: 100%;
-    height: 100%;
-    border-width: 0 0.8vmin 0 0;
-    border-style: solid;
-    border-color: #bccf4d;
-    transform-origin: 100% 0;
-    transition: 0.2s ease;
-  }
-
-  &:hover::after {
-    transform: rotate(45deg);
-    border-color: orange;
-    height: 120%;
-  }
-
-  &:hover::before {
-    border-color: orange;
-    transform: scale(0.8);
-  }
-}
 
 /* flecha 3 */
 .flechita2 {
@@ -248,7 +196,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 30vh;
   background-color: #1f1813;
   position: relative;
   padding-bottom: 50px;
@@ -285,6 +233,9 @@ h1 {
 
 
 }
+ .card:first-child {
+  width: 230px; /* Cambia el ancho según tus preferencias */
+}
 
 .miembros h2 {
 
@@ -294,6 +245,9 @@ h1 {
   font-size: 100px;
   text-align: center;
 
+}
+.box1{
+  
 }
 
 
@@ -316,7 +270,7 @@ h1 {
 
 .card {
   position: relative;
-  width: 250px;
+  width: 500px;
   height: 350px;
   background: #fff;
   margin: 0 auto;
@@ -393,14 +347,14 @@ h1 {
   margin: 0;
   padding: 0;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 30px;
   color: #1b1818;
   text-transform: uppercase;
 }
 
 .card .details h2 span {
   font-weight: 500;
-  font-size: 16px;
+  font-size: 20px;
   color: #1b1818;
   display: block;
   margin-top: 5px;
@@ -415,7 +369,7 @@ h1 {
   align-items: center;
   flex-direction: column;
   padding-bottom: 50px;
-  height: 330vh;
+  height: 350vh;
 }
 
 
@@ -498,21 +452,17 @@ body {
 }
 
 .mi {
-  width: 100%;
+  width: 45%;
   /* Ajusta el ancho al 100% para que se ajuste al contenedor */
-  max-width: 250px;
+  
   /* Establece un ancho máximo */
-  height: 300px;
+  height: 32%;
   margin: 20px auto;
   /* Agrega margen para espaciado */
   padding: 10px;
   /* Agrega relleno según sea necesario */
 }
 
-.frase {
-  min-height: 40vh;
-  min-width: 250px;
-}
 
 .frase-texto {
   font-size: 20px;
@@ -523,7 +473,9 @@ body {
 .container {
   height: 62%;
 }
-
+.card2 {
+  width: 200px;
+}
 .card {
   width: 120px;
   height: 170px;
